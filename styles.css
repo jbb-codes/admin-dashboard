@@ -18,33 +18,98 @@ body{
 }
 
 .sidebar{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     background-color: #3f9ce8;
 }
 
-.sidebar > h1{
-    margin-top: 20px;
-    margin-left: 30px;
+.sidebar > div > img{
+    filter: invert(100%) sepia(1%) saturate(7475%) hue-rotate(183deg) brightness(109%) contrast(95%);
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    /* margin-top: 25px; */
 }
 
-.sidebar > h1 > a{
+#dashboard-icon{
+    margin-left: 25px;
+    width: 75px;
+    height: 75px;
+}
+
+#home-icon{
+    margin-top: 70px;
+}
+
+#settings-icon{
+    margin-top: 100px;
+}
+
+#dashboard-link{
+    margin-top: 45px;
+}
+
+#dashboard-link > a{
+    font-size: 2.3rem;
+    font-weight: 500;
     text-decoration: none;
     color: white;
 }
 
-.sidebar > ul{
-    display: grid;
-    gap: 25px;
-    margin-top: 75px;
-    margin-left: 30px;
-    list-style-type: none;
+.link{
+    margin-top: 30px;
+}
+
+#home-link{
+    margin-top: 97px;
+}
+
+#profile-link {
+    margin-top: 45px;
+}
+
+#messages-link{
+    margin-top: 40px;
+}
+
+#history-link{
+    margin-top: 45px;
+}
+
+#tasks-link{
+    margin-top: 45px;
+}
+
+#communities-link{
+    margin-top: 48px;
+}
+
+#settings-link{
+    margin-top: 113px;
+}
+
+#support-link{
+    margin-top: 45px;
+}
+
+#privacy-link{
+    margin-top: 45px;
+}
+
+.link > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .sidebar > ul > li > a{
     text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 500;
+    
     color: white;
 }
 
@@ -124,8 +189,8 @@ body{
 }
 
 .welcome-username > .profile-picture{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .hello-user{
@@ -214,13 +279,27 @@ body{
     color: lightslategrey;
 }
 
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    align-items: center;
+    justify-items: center;
+    width: 200px;
+}
+
+.icons > img{
+    width: 35px;
+    height: 35px;
+}
+
 .trending-and-announcements{
     margin-top: 30px;
     margin-right: 25px;
 }
 
 .announcements-items{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .announcements-items > h2{
@@ -259,10 +338,6 @@ body{
 }
 
 .trending-items{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 25px;
-    height: 10%;
     padding: 25px;
     background-color: white;
     border-radius: 10px;
@@ -273,11 +348,29 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-self: start;
-    gap: 25px;
+    height: 110px;
+    gap: 20px;
+}
+
+.user-picture{
+    width: 100px;
+    height: 100px;
+}
+
+.user-project{
+    width: 250px;
 }
 
 .trending-container > h2{
     font-family: Roboto;
     font-weight: 500;
+}
+
+.user-name{
+    font-size: 1.2rem;
+}
+
+.project-name{
+    font-size: 1.2rem;
+    color: lightslategrey;
 }
